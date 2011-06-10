@@ -12,7 +12,7 @@
     <?php wp_get_links(); ?>
 <div id="social">
 	<a href="http://www.pinboard.in/u:andrewjesaitis" class="icon" title="Pinboard">
-		<img src="<?php bloginfo('template_directory'); ?>/icons/pin_32.png">
+		<img src="<?php bloginfo('template_directory'); ?>/icons/pinboard.png">
 	</a>
 <a href="http://www.github.com/andrewjesaitis" class="icon" title="Github">
 		<img src="<?php bloginfo('template_directory'); ?>/icons/github_32.png">
