@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang=en>
+
+<head>
+	<meta charset=utf-8 />
+
+	<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
+
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/print.css" type="text/css" media="print">
+    <!--[if lt IE 8]><link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+	<?php wp_get_archives('type=monthly&format=link'); ?>
+	<?php //comments_popup_script(); // off by default ?>
+	<?php wp_head(); ?>
+	<script src="<?php bloginfo('template_directory'); ?>/js/functions.js"></script>
+</head>
+
+<body <?php body_class(); ?>>
+<div class="container">
+<header>
+	<hrgroup>
+		<h1><a href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?></a> :: </h1> <h2><?php bloginfo('description'); ?> </h2>
+	</hrgroup>
+	<div id="blurb">
+		<?php echo do_shortcode('[AFG_gallery]'); ?>
+	</div>
+<ul id="navbar">
+	<li><h3><a href="<?php bloginfo('url'); ?>/about">About</a></h3></li>
+	<li><h3><a href="<?php bloginfo('url'); ?>/portfolio">Portfolio</a></h3></li>
+	<li><h3><a href="<?php bloginfo('url'); ?>/projects">Projects</a></h3></li>
+	<li id="social">
+		<a href="http://www.pinboard.in/u:andrewjesaitis" class="icon" title="Pinboard">
+			<img src="<?php bloginfo('template_directory'); ?>/icons/pin_32.png"></a>
+		<a href="http://www.github.com/andrewjesaitis" class="icon" title="Github">
+			<img src="<?php bloginfo('template_directory'); ?>/icons/github_32.png"></a>
+		<a href="http://www.flickr.com/andrewjesaitis" class="icon" title="Flickr">
+			<img src="<?php bloginfo('template_directory'); ?>/icons/flickr_32.png"></a>
+		<a href="http://www.twitter.com/andrewjesaitis" class="icon" title="Twitter">
+			<img src="<?php bloginfo('template_directory'); ?>/icons/twitter_32.png"></a>
+		<a href="http://www.andrewjesaitis.com/feed" class="icon" title="Rss">
+			<img src="<?php bloginfo('template_directory'); ?>/icons/rss_32.png">
+		</a>
+	</li>
+</ul>
+</header>
+<div id="content">
+<!-- end header -->

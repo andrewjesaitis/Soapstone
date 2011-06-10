@@ -1,0 +1,17 @@
+/*
+Theme Name: Soapstone
+Theme URI: http://andrewjesaitis.com/projects/soapstone
+Description: Stripped to the bone, soft to the touch
+Version: 0.0
+Author: Andrew Jesaitis
+Author URI: http://andrewjesaitis
+License: GNU General Public License
+License URI: license.txt
+
+CSS based on Blueprint http://www.blueprintcss.org/
+
+*/
+
+@import "css/screen.css";
+@import "css/print.css";
+@import "css/ie.css";
