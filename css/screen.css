@@ -47,7 +47,7 @@ body {
 	font-family: 'DejaVuSansBook', Helvetica, sans-serif;
 }
 .container {
-	width:950px;
+	width:800px;
 	margin:0 auto;
 }
 h1, h2, h3, h4, h5, h6, #respond label, .contact-form label, nav a, table {
@@ -118,6 +118,12 @@ address {
 pre {
 	margin:1.5em 0;
 	white-space:pre;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
 }
 
 /**Tables **/

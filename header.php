@@ -12,8 +12,10 @@
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	<?php wp_get_archives('type=monthly&format=link'); ?>
 	<?php //comments_popup_script(); // off by default ?>
-	<?php wp_head(); ?>
+	<?php wp_head();?>
 	<script src="<?php bloginfo('template_directory'); ?>/js/functions.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/slimbox2/js/slimbox2.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -22,9 +24,9 @@
 	<hrgroup>
 		<h1><a href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?></a> :: </h1> <h2><?php bloginfo('description'); ?> </h2>
 	</hrgroup>
-	<div id="blurb">
+	<!--<div id="blurb">
 		<?php echo do_shortcode('[AFG_gallery]'); ?>
-	</div>
+	</div> -->
 </header>
 <div id="content">
 <!-- end header -->
