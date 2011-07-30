@@ -141,7 +141,7 @@ thead th {
 }
 th, td  {
 	color:#8a8a8a;
-	padding:.2em;
+	padding:.1em;
 }
 tbody tr:nth-child(even) td, tbody tr.even td {}
 tr {}
@@ -207,10 +207,16 @@ article h4, article h4 a, article h5, article h5 a, #comments h5, #comments h5 a
 article {
 	font-size:1.3em;
 }
+article.post {
+	border-bottom:1px solid #e7e7e7;
+}
 article.result {
     padding-bottom: 1em;
     border-bottom:1px solid #8a8a8a;
     margin-bottom: 1em;
+}
+.notes-2 .storytitle {
+	display: none;
 }
 .alignleft {
     float: left;
@@ -426,8 +432,8 @@ nav a:focus, nav a:hover, #postpage a:hover, #center li a:hover {
 }
 nav#footer {
     border-top: 1px solid #e7e7e7;
-    border-bottom: 1px solid #e7e7e7;
-    overflow: auto;
+    /*border-bottom: 1px solid #e7e7e7;
+    overflow: auto;*/
 }
 .footerbox {
     float:left;
@@ -465,14 +471,21 @@ nav a{
 }
 :-moz-placeholder {
     text-align:center;
-   font-family: 'DeliciousSmallCaps', Helvetica, sans-serif;
+    font-family: 'DeliciousSmallCaps', Helvetica, sans-serif;
     color:#8a8a8a;
 }
 
 /* Calendar */
-td#prev {
+nav td a {
+	color: #111111;
+}
+td#prev a{
 	text-align:left;
 }
 td#next {
 	text-align:right;
+}
+
+td#prev a, td#next a{
+	color:#8a8a8a;
 }
